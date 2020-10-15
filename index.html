@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>Programming knowledge</title>
+  <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<section class="header">
+  <nav>
+    <div class="nav-wrapper green darken-4">
+      <a href="#" class="brand-logo" style="font-size:3vw; padding-left: 25px;">Programming knowledge</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#modal1"class="modal-trigger">Login</a></li>
+        <li><a href="#modal2"class="modal-trigger">Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav green" id="mobile-demo" style="padding-top:50px;">
+    <li><a href="#" class="white-text">Programming knowledge</a></li>
+    <li><a href="#modal1" class="white-text modal-trigger">Login</a></li>
+    <li><a href="#modal2" class="white-text modal-trigger">Register</a></li>
+  </ul>
+</section>
+
+
+
+<section class="courses">
+  <div class="container" style="padding:30px;">
+    <div class="row">
+      <div class="col s12 m8 l4">
+        <div class="card z-depth-3">
+          <div class="card-image">
+            <img src="image/c.png">
+          </div>
+          <div class="card-content">
+            <p>It is a procedural programming language.</p>
+          </div>
+          <div class="card-action">
+            <a href="lang/c.html" class=" waves-effect waves-green btn">Visit this</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m8 l4">
+        <div class="card z-depth-3">
+          <div class="card-image">
+            <img src="image/cpp.png">
+          </div>
+          <div class="card-content">
+            <p>It is an object oriented programming language that also includes
+            all the features of C.</p>
+          </div>
+          <div class="card-action">
+            <a href="lang/cpp.html" class=" waves-effect waves-green btn">Visit this</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m8 l4">
+        <div class="card z-depth-3">
+          <div class="card-image">
+            <img src="image/java.png">
+          </div>
+          <div class="card-content">
+            <p>Java is a class-based, object-oriented programming language
+              that is designed to have as few implementation dependencies as possible.</p>
+          </div>
+          <div class="card-action">
+            <a href="lang/java.html" class=" waves-effect waves-green btn">Visit this</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m8 l4">
+        <div class="card z-depth-3">
+          <div class="card-image">
+            <img src="image/python.png">
+          </div>
+          <div class="card-content">
+            <p>Python is a scripting language also includes various features from C,C++ and java</p>
+          </div>
+          <div class="card-action">
+            <a href="lang/python.html" class=" waves-effect waves-green btn">Visit this</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m8 l4">
+        <div class="card z-depth-3">
+          <div class="card-image">
+            <img src="image/html.png">
+          </div>
+          <div class="card-content">
+            <p> HTML is the standard markup language for creating Web pages.</p>
+          </div>
+          <div class="card-action">
+            <a href="lang/html.html" class=" waves-effect waves-green btn">Visit this</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m8 l4">
+        <div class="card z-depth-3">
+          <div class="card-image">
+            <img src="image/css.png">
+          </div>
+          <div class="card-content">
+            <p>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</p>
+          </div>
+          <div class="card-action">
+            <a href="lang/css.html" class=" waves-effect waves-green btn">Visit this</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Login  -->
+ <div id="modal1" class="modal white darken-4">
+   <div class="modal-content">
+     <div class="row">
+       <form class="col s12">
+         <div class="row">
+           <div class="input-field col s6">
+            <input id="name" type="text" class="validate" required>
+            <label for="name">User Name</label>
+          </div>
+         </div>
+         <div class="row">
+           <div class="input-field col s12">
+             <input id="password" type="password" class="validate" required>
+             <label for="password">Password</label>
+           </div>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="center modal-footer white darken-4">
+     <a onclick="M.toast({html: 'Logged in',classes: 'rounded'})" class="modal-close waves-effect waves-green btn">Login</a><br>
+     <a  href="">Already have an account?</a>
+   </div>
+ </div>
+
+<!-- Register -->
+ <div id="modal2" class="modal white darken-4">
+   <div class="modal-content">
+     <div class="row">
+       <form  class="col s12">
+         <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate" required>
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate" required>
+            <label for="last_name">Last Name</label>
+          </div>
+         </div>
+         <div class="row">
+           <div class="input-field col s6">
+            <input id="name" type="text" class="validate" required>
+            <label for="name">User Name</label>
+          </div>
+         </div>
+         <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate" required>
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate" required>
+            <label for="password">Password</label>
+          </div>
+        </div>
+       </form>
+     </div>
+   </div>
+   <div class="center modal-footer white darken-4">
+     <a onclick="M.toast({html: 'Welcome you here',classes: 'rounded'})" class="modal-close waves-effect waves-green btn">Register</a><br>
+     <a  href="">Already have an account?</a>
+   </div>
+ </div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.modal').modal();
+  });
+</script>
+
+
+
+</html>
