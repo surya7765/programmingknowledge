@@ -20,3 +20,7 @@
   transition: all .4s ease; /* zoom in */
   cursor: pointer;
 }
+
+p.Getting-started {
+  font-size: x-large;
+}
