@@ -9,4 +9,6 @@ You can add any language whichever you want.
 
 You can see your changes [here](https://programmingknowledge.netlify.app/)
 
-You can start adding your PR from tommorow.
+First see the website and choose your specific language then you can start writing bcoz same content can't be accepted.
+
+Just see the [website](https://programmingknowledge.netlify.app/) and then try to write tutorial according to that.
